@@ -1,0 +1,51 @@
+@import url(../css/layout.css);
+
+body{
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: top;
+    position: relative;
+    display: flex;
+    
+    
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+   
+}
+.column{
+    display:flex ;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.left-column{
+    width: 50%;  
+    background-image: url(../images/left.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 380px;
+}
+.right-column{
+    width: 40%;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/right.png);
+    width: 390px;
+    height: 420px;
+    
+}
