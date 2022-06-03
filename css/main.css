@@ -10,14 +10,12 @@ body{
     vertical-align: top;
     position: relative;
     display: flex;
-    
-    
-}
-
-body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+section{
+    min-height: 100vh;
+}
 .main-content{
     display: flex;
     justify-content: center;
@@ -30,6 +28,7 @@ body {
     display:flex ;
     flex-direction: column;
     gap: 10px;
+    
 
 }
 .left-column{
@@ -37,15 +36,75 @@ body {
     background-image: url(../images/left.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 280px;
-    height: 380px;
+    width: 260px;
+    height: 360px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px;
+    text-align: left;
+}
+.column .title{
+    color: #fff;
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 0;
+}
+.column > .copyright{
+    color: #fff;
 }
 .right-column{
     width: 40%;  
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/right.png);
-    width: 390px;
-    height: 420px;
-    
+    width: 400px;
+    height: 430px;
+    padding: 40px;  
+}
+
+.input{
+    border:none;
+    border-bottom: 2px solid black;
+}
+.input:focus{
+    outline-width: 0;
+}
+.column > .login {
+    text-align: left;
+    color: silver;
+    font-size: 12px;
+}
+.login-btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btn{
+    color: white;
+    border: solid rgb(0, 174, 255);
+    border-radius: 25px;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: rgb(0, 174, 255);
+    margin-right: 10px;
+}
+
+.btn:hover{
+    background-color: aqua;
+    border: solid aqua;
+}
+.login-btn > p{
+    margin-right: 10px;
+}
+.login-link{
+    color:rgb(0, 174, 255);
+    font-weight: bold;
+}
+.login-link:hover{
+    color:rgb(144, 30, 226)
+  
 }
